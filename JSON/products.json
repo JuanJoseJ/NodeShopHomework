@@ -1,0 +1,4 @@
+[{"name":"banana","id":1,"price":100,"image":"/images/banana.jpg","stock":100},
+    {"name":"apple","id":2,"price":150,"image":"/images/apple.jpg","stock":200},
+    {"name":"lemon","id":3,"price":50,"image":"/images/lemon.jpg","stock":600}
+]

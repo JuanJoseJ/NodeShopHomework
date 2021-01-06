@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>homework1</title>
+</head>
+<style>
+    .container
+    {
+    overflow: hidden;
+    align-self: right;
+    }
+    .text
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block; 
+        color: rgb(0, 0, 0); 
+        text-align:right; 
+        margin:auto;
+    }
+    .img
+    {
+        float: left; 
+        max-width: auto; 
+        max-height:100px;   
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="text">
+            {{name}}
+        </h1> 
+        <a href="/cart">
+            <img src="/images/basket.jpg" class="img">
+        </a>
+    </div>
+    <div>
+        {{{body}}}
+    </div><br>
+    <div>
+        <div style="text-align: center;"></div>
+            {{#if logged}}
+                    <button>
+                        <a href="/logout" style="color: rgb(0, 0, 0);">logout</a>
+                    </button>                
+            {{/if}}
+            <button>
+                <a href="/welcome" style="color: rgb(0, 0, 0);">Go 2 main page</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

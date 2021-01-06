@@ -1,0 +1,15 @@
+<body>
+    <div style="text-align: center;">
+        <h3 style="color: crimson;">Shopping cart:</h3>
+        <ul style="list-style: none; display: inline;">
+            {{#each cart}}
+                <li><h4>{{this}}</h4></li>
+            {{/each}}
+            <div style="text-align: center;">
+                <button>
+                    <a href="/buy" style="color: rgb(0, 0, 0);">Buy items</a>
+                </button>
+            </div>
+        </ul>
+    </div>
+</body>

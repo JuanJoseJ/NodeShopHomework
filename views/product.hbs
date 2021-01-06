@@ -1,0 +1,19 @@
+<body>
+    <div style="text-align: center;">
+        <h3 style="color: crimson;">About the item:</h3>
+        <ul style="list-style: none; display: inline;">
+            {{#each item}}
+                <li><h4>{{@key}}: {{this}}</h4></li>
+            {{/each}}
+            <img src="{{item.image}}" name="image" style='max-width: auto; max-height:100px;'>
+            <div style="text-align: center;">
+                <button>
+                    <a href="/add2basket/?name={{item.name}}" style="color: rgb(0, 0, 0);">Add to basket</a>
+                </button>
+                <button>
+                    <a href="/products" style="color: rgb(0, 0, 0);">return to all products</a>
+                </button>
+            </div>
+        </ul>
+    </div>
+</body>

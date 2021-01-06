@@ -1,0 +1,10 @@
+ <body onload="showProducts()">
+    <div style="text-align: center;">
+        <h3 style="color: crimson;">Sold Items:</h3>
+        <ul style="list-style: none; display: inline;">
+            {{#each products}}
+                <li><a href="/product/?name={{this.name}}">{{this.name}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+ </body>
